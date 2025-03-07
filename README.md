@@ -8,4 +8,4 @@ deixei tudo com mesmo nome do repertório
 git remote add origim https://github.com/Alle84fr/TesteBranch.git
 
 testando novas branchs
-criar nova branch git branch nomeBranch
+criar nova branch git checkout -b "novoBraco"
