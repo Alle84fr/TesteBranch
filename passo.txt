@@ -1,0 +1,35 @@
+
+-- Terminal, penas para criar e entrera e pasta e arquivo --
+
+mkdir NomeNovaPasta
+cd NomeNovaPasta
+code .                      -> entra na pasta em nova windows 
+New-Item -Path .\nomeFile.extensão 
+
+-- push - Repositório acabado de ser criado e terá seus primeiros-- 
+git init                    -> ele cria repositório local, por isso deve usar git remote, para conectar
+git status                  -> faço para ver nome da branch, se for main, pulo próximo cód
+git branch -M main          -> nomeia brancha para main
+git remote add origin url   -> conectando ao repositório remoto o local
+git add .         
+ou
+git add nomeFile
+git commit -m "resumo do que fez"
+git push origin main         -> ou nome da branch em questão tipo git push origin branch1
+
+* gir remote add orgin url conecta o repositório local feito manualmente (abriu fez, não clonou) ao remoto
+
+-- clone - copiar um reposiório remoto ao local --
+
+*ele já conecta ao repositório, então usa-se git remote add origin url
+$não usa git init, pois o clone copia o repositório remoto, cria pasta local e configura automaticamente o origin
+
+git clone url
+cd nomeRepositório
+code .
+trabalha o cod
+git add .
+git commit -m "texto"
+git push origem main
+
+
